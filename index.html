@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية | Vendora فيندورا</title>
+<meta name="description" content="سياسة الخصوصية لتطبيق Vendora (فيندورا): ما البيانات التي نعالجها، ولماذا، وكيف يمكنك طلب الوصول إليها أو حذفها.">
+<meta name="theme-color" content="#7C3AED">
+<link rel="canonical" href="https://bayzy-21.github.io/VENDORA-privacy/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --violet:#7C3AED; --violet-dark:#5B21B6; --violet-soft:#F3EDFF;
+  --ink:#111111; --text:#2B2B33; --muted:#5E5E6B;
+  --bg:#FFFFFF; --bg2:#F5F5F8; --line:#E4E2EC; --wa:#25D366; --wa-dark:#128C4A;
+  --font:"Cairo","Tajawal","Segoe UI",Tahoma,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font-family:var(--font);color:var(--text);background:var(--bg2);line-height:1.95;font-size:17px;-webkit-text-size-adjust:100%}
+a{color:var(--violet-dark)}
+:focus-visible{outline:3px solid var(--violet);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;inset-inline-start:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;z-index:50;text-decoration:none}
+.skip:focus{top:12px}
+svg.i{width:1.25em;height:1.25em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* Header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1120px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.mark{width:40px;height:40px;border-radius:12px;background:var(--violet);color:#fff;display:grid;place-items:center}
+.brand b{font-size:22px;font-weight:900;letter-spacing:.2px;line-height:1}
+.brand small{display:block;font-size:12px;color:var(--muted);font-weight:600;line-height:1.3}
+.top a.go{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:10px;border:1.5px solid var(--violet);color:var(--violet-dark);font-weight:700;text-decoration:none;font-size:15px}
+.top a.go:hover{background:var(--violet-soft)}
+
+/* Hero */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset-block:0;inset-inline-start:0;width:14px;background:var(--violet)}
+.hero-in{max-width:1120px;margin:0 auto;padding:64px 28px 56px}
+.hero h1{font-size:clamp(38px,7vw,68px);line-height:1.2;margin:0 0 16px;font-weight:900}
+.hero p{max-width:640px;margin:0 0 22px;color:#D9D6E6;font-size:18px}
+.stamp{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);padding:6px 14px;border-radius:999px;font-size:15px;font-weight:600}
+
+/* Layout */
+.wrap{max-width:1120px;margin:0 auto;padding:32px 20px 56px;display:grid;grid-template-columns:270px 1fr;gap:28px;align-items:start}
+.toc{position:sticky;top:92px;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:16px 8px;max-height:calc(100vh - 112px);overflow:auto}
+.toc h2{font-size:16px;margin:0 12px 8px;color:var(--ink)}
+.toc ol{list-style:none;margin:0;padding:0;counter-reset:t}
+.toc a{display:flex;gap:10px;align-items:baseline;padding:6px 12px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14.5px;line-height:1.6;counter-increment:t}
+.toc a::before{content:counter(t);min-width:1.5em;color:var(--violet);font-weight:700}
+.toc a:hover,.toc a.on{background:var(--violet-soft);color:var(--violet-dark)}
+
+/* Sections */
+main{display:grid;gap:16px;min-width:0}
+.sec{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:26px 28px;border-inline-start:5px solid var(--violet)}
+.sec h2{display:flex;gap:12px;align-items:baseline;font-size:22px;line-height:1.5;margin:0 0 10px;color:var(--ink)}
+.sec h2 span{color:var(--violet);font-weight:900}
+.sec p{margin:0 0 10px;max-width:70ch}
+.sec ul{margin:6px 0 10px;padding-inline-start:22px;max-width:70ch}
+.sec li{margin-bottom:4px}
+.sec li::marker{color:var(--violet)}
+.sec :last-child{margin-bottom:0}
+.note{background:var(--violet-soft);border-radius:10px;padding:12px 16px;color:#3B1B7A;font-size:16px}
+
+/* Contact */
+.contact{background:var(--violet-dark);color:#fff;border-radius:20px;padding:36px 30px;border:0;scroll-margin-top:90px}
+.contact h2{font-size:clamp(24px,4vw,32px);margin:0 0 8px;font-weight:900}
+.contact>p{color:#E8DFFF;max-width:60ch;margin:0 0 24px}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:22px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:12px 20px;border-radius:14px;font-weight:700;font-size:17px;text-decoration:none;text-align:center;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.btn.wa{background:var(--wa);color:#07260F}
+.btn.wa:hover{background:#3BE07C}
+.btn.ml{background:#fff;color:var(--violet-dark)}
+.btn svg.i{width:26px;height:26px}
+.copyrow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.copy{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0}
+.copy div{min-width:0}
+.copy small{display:block;color:#CDBDF5;font-size:13px;line-height:1.5}
+.copy bdi{font-weight:700;font-size:16px;word-break:break-all;user-select:all}
+.copy button{flex:none;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 12px;border-radius:10px;border:1px solid rgba(255,255,255,.4);background:transparent;color:#fff;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.copy button:hover{background:rgba(255,255,255,.15)}
+.contact :focus-visible{outline-color:#fff}
+
+/* Footer */
+footer{background:var(--ink);color:#CFCDD8;font-size:15px}
+.f-in{max-width:1120px;margin:0 auto;padding:30px 20px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+footer a{color:#fff}
+footer .brand{color:#fff}
+footer .brand small{color:#A9A6B8}
+.f-links{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center}
+
+@media (max-width:860px){
+  body{font-size:16.5px}
+  .wrap{grid-template-columns:1fr;padding-top:20px}
+  .toc{position:static;max-height:none}
+  .toc ol{columns:2;column-gap:8px}
+  .sec{padding:22px 18px}
+  .hero-in{padding:44px 22px 40px}
+}
+@media (max-width:600px){
+  .toc ol{columns:1}
+  .btns,.copyrow{grid-template-columns:1fr}
+  .contact{padding:28px 18px}
+  .brand small{display:none}
+  .top a.go span{display:none}
+  .top a.go{padding:0 12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn{transition:none}.btn:hover{transform:none}
+}
+@media print{.top,.toc,.contact .btns,.copy button{display:none}.wrap{display:block}.sec{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<!--
+  ملاحظة للمالك قبل النشر: راجع كل نقطة مكتوبة في السياسة وتأكد أنها تطابق التطبيق فعليًا
+  (أنواع البيانات، الخدمات المستخدمة، الموقع الجغرافي، الحد الأدنى للعمر، مدة الاحتفاظ).
+-->
+
+<a class="skip" href="#content">تخطَّ إلى المحتوى</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/><path d="M9.2 8.6c-.3.9.2 2.1 1.3 3.2s2.3 1.6 3.2 1.3l.8-.9-1.5-1-.7.5c-.5-.2-1.2-.9-1.4-1.4l.5-.7-1-1.5z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#top" aria-label="Vendora فيندورا">
+      <span class="mark"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg></span>
+      <span><b>Vendora</b><small>فيندورا</small></span>
+    </a>
+    <a class="go" href="#contact"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg><span>تواصل معنا</span></a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-in">
+    <h1>سياسة الخصوصية</h1>
+    <p>خصوصيتك جزء من ثقتك بنا. توضّح هذه الصفحة بلغة بسيطة ما البيانات التي يعالجها تطبيق Vendora، ولماذا نحتاجها، وما الخيارات المتاحة لك.</p>
+    <span class="stamp"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg>آخر تحديث: <time datetime="2026-10-25">25 أكتوبر 2026</time></span>
+  </div>
+</section>
+
+<div class="wrap" id="content">
+  <nav class="toc" aria-label="أقسام السياسة">
+    <h2>أقسام السياسة</h2>
+    <ol>
+      <li><a href="#s1">مقدمة ونطاق السياسة</a></li>
+      <li><a href="#s2">المعلومات التي تقدّمها</a></li>
+      <li><a href="#s3">الطلبات والعناوين والتوصيل</a></li>
+      <li><a href="#s4">المتاجر والمنتجات والتقييمات</a></li>
+      <li><a href="#s5">الإشعارات ومعرّفات الأجهزة</a></li>
+      <li><a href="#s6">البيانات التقنية وسجلات الأخطاء</a></li>
+      <li><a href="#s7">كيف نستخدم المعلومات</a></li>
+      <li><a href="#s8">خدمات الأطراف الثالثة</a></li>
+      <li><a href="#s9">مشاركة البيانات لتنفيذ الطلبات</a></li>
+      <li><a href="#s10">حماية المعلومات</a></li>
+      <li><a href="#s11">مدة الاحتفاظ بالبيانات</a></li>
+      <li><a href="#s12">حذف الحساب والبيانات</a></li>
+      <li><a href="#s13">حقوقك</a></li>
+      <li><a href="#s14">خصوصية الأطفال</a></li>
+      <li><a href="#s15">ملفات تعريف الارتباط</a></li>
+      <li><a href="#s16">التعديلات على السياسة</a></li>
+      <li><a href="#contact">التواصل معنا</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <article class="sec" id="s1">
+      <h2><span>1</span>مقدمة ونطاق السياسة</h2>
+      <p>Vendora (فيندورا) تطبيق تسوّق إلكتروني يربط المستخدمين بالمتاجر والمنتجات والطلبات. تشرح هذه السياسة كيف نجمع المعلومات الشخصية ونستخدمها ونشاركها عند استخدامك للتطبيق وهذه الصفحة.</p>
+      <p>باستخدامك التطبيق فإنك تقرّ بقراءة هذه السياسة. إن لم توافق عليها فنرجو التوقف عن استخدام التطبيق. قد تختلف الوظائف المتاحة من إصدار إلى آخر، وتنطبق هذه السياسة على الوظائف المفعّلة فعليًا.</p>
+    </article>
+
+    <article class="sec" id="s2">
+      <h2><span>2</span>المعلومات التي تقدّمها</h2>
+      <p>قد نجمع المعلومات التي تدخلها بنفسك عند إنشاء حساب أو استخدام التطبيق، ومنها:</p>
+      <ul>
+        <li>الاسم.</li>
+        <li>البريد الإلكتروني.</li>
+        <li>رقم الهاتف.</li>
+        <li>معلومات الحساب، مثل نوع الحساب وبيانات الدخول المرتبطة بخدمة المصادقة.</li>
+        <li>الرسائل التي ترسلها إلينا عند طلب الدعم.</li>
+      </ul>
+    </article>
+
+    <article class="sec" id="s3">
+      <h2><span>3</span>الطلبات والعناوين والتوصيل</h2>
+      <p>عند إتمام طلب، نعالج بيانات الطلب (المنتجات والكميات والمبلغ وحالة الطلب)، وعنوان التوصيل ووسيلة الاتصال بك اللازمة لوصول الطلب، وأي ملاحظات تضيفها إليه.</p>
+      <p>تُعالج هذه البيانات فقط عند استخدامك وظائف الطلب والتوصيل.</p>
+    </article>
+
+    <article class="sec" id="s4">
+      <h2><span>4</span>المتاجر والمنتجات والتقييمات</h2>
+      <p>إذا استخدمت التطبيق بصفة بائع أو متجر، فقد نخزّن بيانات المتجر وقائمة المنتجات وأسعارها وصورها. وإذا أضفت تقييمًا أو تعليقًا على منتج أو متجر، فقد يُعرض مع اسمك أو اسم حسابك بحسب ما يعرضه التطبيق.</p>
+    </article>
+
+    <article class="sec" id="s5">
+      <h2><span>5</span>الإشعارات ومعرّفات الأجهزة</h2>
+      <p>لإرسال إشعارات الطلبات والتحديثات قد نستخدم معرّفًا خاصًا بجهازك (رمز الإشعارات) تولّده خدمة الإشعارات. نستخدمه لإيصال الإشعارات إلى جهازك فقط، ويمكنك إيقافها في أي وقت من إعدادات جهازك.</p>
+    </article>
+
+    <article class="sec" id="s6">
+      <h2><span>6</span>البيانات التقنية وسجلات الأخطاء</h2>
+      <p>قد تعالج الخدمات التقنية التي يعتمد عليها التطبيق بيانات تقنية، مثل نوع الجهاز ونظام التشغيل وإصدار التطبيق وسجلات الأخطاء والأعطال. تساعدنا هذه البيانات على اكتشاف المشكلات وإصلاحها وتحسين الأداء.</p>
+    </article>
+
+    <article class="sec" id="s7">
+      <h2><span>7</span>كيف نستخدم المعلومات</h2>
+      <ul>
+        <li>تشغيل التطبيق وإنشاء الحسابات وإدارتها.</li>
+        <li>استلام الطلبات ومعالجتها وتنفيذ التوصيل.</li>
+        <li>إرسال إشعارات تتعلق بحسابك وطلباتك.</li>
+        <li>الرد على استفساراتك وتقديم الدعم.</li>
+        <li>اكتشاف الأخطاء وتحسين الأمان والأداء.</li>
+        <li>الالتزام بالمتطلبات القانونية عند الاقتضاء.</li>
+      </ul>
+    </article>
+
+    <article class="sec" id="s8">
+      <h2><span>8</span>خدمات الأطراف الثالثة</h2>
+      <p>يعتمد التطبيق على خدمات سحابية من Google لتوفير وظائف مثل المصادقة وتخزين البيانات والملفات والإشعارات. تعالج هذه الجهة البيانات وفق سياسة الخصوصية الخاصة بها:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">سياسة خصوصية Google</a></li>
+      </ul>
+      <p>ليس لنا سيطرة على ممارسات هذه الجهة، وننصحك بمراجعة سياستها.</p>
+    </article>
+
+    <article class="sec" id="s9">
+      <h2><span>9</span>مشاركة البيانات لتنفيذ الطلبات</h2>
+      <p>نشارك الحد الضروري من بياناتك مع المتجر الذي طلبت منه وجهة التوصيل المكلّفة بطلبك، مثل اسمك ورقم هاتفك وعنوان التوصيل وتفاصيل الطلب، وذلك لتنفيذ الطلب فقط.</p>
+      <p>وقد نفصح عن بيانات عندما يُطلب منا ذلك قانونيًا من جهة مختصة.</p>
+    </article>
+
+    <article class="sec" id="s10">
+      <h2><span>10</span>حماية المعلومات</h2>
+      <p>نعتمد على أدوات الحماية التي توفرها خدمات Google السحابية، ونحرص على إتاحة البيانات للأطراف التي تحتاجها لتنفيذ الخدمة فقط.</p>
+      <p class="note">لا توجد طريقة نقل أو تخزين إلكتروني آمنة بالكامل، ولذلك لا نستطيع ضمان أمان مطلق. احرص على سرية بيانات دخولك وعلى تحديث جهازك.</p>
+    </article>
+
+    <article class="sec" id="s11">
+      <h2><span>11</span>مدة الاحتفاظ بالبيانات</h2>
+      <p>نحتفظ ببياناتك ما دام حسابك نشطًا وبالقدر اللازم لتقديم الخدمة. وقد نحتفظ ببعض سجلات الطلبات لفترة بعد حذف الحساب إذا كان ذلك ضروريًا لمعالجة نزاع أو الوفاء بالتزام قانوني أو حماية حقوقنا.</p>
+    </article>
+
+    <article class="sec" id="s12">
+      <h2><span>12</span>حذف الحساب والبيانات</h2>
+      <p>يمكنك طلب حذف حسابك وبياناتك المرتبطة به في أي وقت بإرسال طلب عبر <a href="#contact">واتساب أو البريد الإلكتروني</a>. اذكر في الطلب الاسم والبريد الإلكتروني أو رقم الهاتف المسجَّل في حسابك لنتمكن من التحقق منك.</p>
+      <p>سننظر في الطلب ونرد عليك. قد نحتفظ ببعض البيانات إن كان القانون أو تنفيذ طلب جارٍ يستلزم ذلك، كما هو موضّح في قسم مدة الاحتفاظ.</p>
+    </article>
+
+    <article class="sec" id="s13">
+      <h2><span>13</span>حقوقك</h2>
+      <p>يمكنك أن تطلب منا:</p>
+      <ul>
+        <li>معرفة البيانات الشخصية التي نحتفظ بها عنك.</li>
+        <li>تصحيح البيانات غير الدقيقة أو تحديثها.</li>
+        <li>حذف بياناتك أو حسابك.</li>
+        <li>الاعتراض على معالجة معينة لبياناتك أو تقييدها.</li>
+      </ul>
+      <p>لتقديم أي طلب استخدم وسائل التواصل أدناه. قد نطلب منك ما يثبت هويتك قبل تنفيذه.</p>
+    </article>
+
+    <article class="sec" id="s14">
+      <h2><span>14</span>خصوصية الأطفال</h2>
+      <p>التطبيق غير موجّه إلى الأطفال دون سن 13 عامًا، ولا نجمع عمدًا معلومات شخصية منهم. إذا علمتَ أن طفلًا قدّم لنا بياناته، فتواصل معنا لنحذفها.</p>
+    </article>
+
+    <article class="sec" id="s15">
+      <h2><span>15</span>ملفات تعريف الارتباط والتقنيات المشابهة</h2>
+      <p>لا تستخدم هذه الصفحة ملفات تعريف الارتباط ولا أدوات تتبّع أو إعلانات. وقد يخزّن التطبيق على جهازك بيانات محلية، مثل حالة تسجيل الدخول والإعدادات، لإبقاء التطبيق يعمل كما تتوقع.</p>
+    </article>
+
+    <article class="sec" id="s16">
+      <h2><span>16</span>التعديلات على السياسة</h2>
+      <p>قد نحدّث هذه السياسة عند تغيّر التطبيق أو المتطلبات القانونية. سنعدّل تاريخ «آخر تحديث» أعلى الصفحة، وعند التغييرات الجوهرية نبذل جهدنا لإخطارك داخل التطبيق أو بوسيلة مناسبة. استمرارك في استخدام التطبيق بعد التحديث يعني قبولك للنسخة الجديدة.</p>
+    </article>
+
+    <section class="sec contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">هل لديك استفسار حول خصوصيتك؟</h2>
+      <p>إذا كانت لديك أسئلة حول سياسة الخصوصية أو بياناتك الشخصية أو رغبت في تقديم طلب متعلق ببياناتك، يمكنك التواصل مع فريق Vendora عبر إحدى الوسائل التالية.</p>
+
+      <div class="btns">
+        <a class="btn wa" href="https://wa.me/9647708555335" target="_blank" rel="noopener noreferrer">
+          <svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>تواصل معنا عبر واتساب
+        </a>
+        <a class="btn ml" href="mailto:vendora.app2026@gmail.com">
+          <svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>راسلنا عبر البريد الإلكتروني
+        </a>
+      </div>
+
+      <div class="copyrow">
+        <div class="copy">
+          <div><small>رقم واتساب</small><bdi dir="ltr">+9647708555335</bdi></div>
+          <button type="button" data-copy="+9647708555335" aria-label="نسخ رقم واتساب"><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg><span>نسخ</span></button>
+        </div>
+        <div class="copy">
+          <div><small>البريد الإلكتروني</small><bdi dir="ltr">vendora.app2026@gmail.com</bdi></div>
+          <button type="button" data-copy="vendora.app2026@gmail.com" aria-label="نسخ البريد الإلكتروني"><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg><span>نسخ</span></button>
+        </div>
+      </div>
+      <p role="status" aria-live="polite" id="toast" style="margin:12px 0 0;min-height:1.6em;color:#E8DFFF;font-size:15px"></p>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <div class="f-in">
+    <div class="brand"><span class="mark"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg></span><span><b>Vendora</b><small>فيندورا</small></span></div>
+    <div class="f-links">
+      <a href="mailto:vendora.app2026@gmail.com" dir="ltr">vendora.app2026@gmail.com</a>
+      <a href="https://wa.me/9647708555335" target="_blank" rel="noopener noreferrer" dir="ltr">+9647708555335</a>
+    </div>
+    <div>© <span id="yr">2026</span> Vendora. جميع الحقوق محفوظة.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var toast = document.getElementById('toast');
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var v = b.getAttribute('data-copy');
+      function done(ok){
+        toast.textContent = ok ? 'تم النسخ: ' + v : 'تعذّر النسخ، حدّد النص وانسخه يدويًا.';
+        setTimeout(function(){ toast.textContent = ''; }, 3000);
+      }
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(v).then(function(){ done(true); }, function(){ done(false); });
+      } else {
+        var t = document.createElement('textarea');
+        t.value = v; t.style.position = 'fixed'; t.style.opacity = '0';
+        document.body.appendChild(t); t.select();
+        var ok = false; try { ok = document.execCommand('copy'); } catch(e){}
+        document.body.removeChild(t); done(ok);
+      }
+    });
+  });
+
+  var links = document.querySelectorAll('.toc a');
+  if ('IntersectionObserver' in window) {
+    var map = {};
+    links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting) {
+          links.forEach(function(a){ a.classList.remove('on'); a.removeAttribute('aria-current'); });
+          var a = map[e.target.id];
+          if (a) { a.classList.add('on'); a.setAttribute('aria-current','true'); }
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    Object.keys(map).forEach(function(id){ var el = document.getElementById(id); if (el) io.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
